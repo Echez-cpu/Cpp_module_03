@@ -19,11 +19,6 @@ ScavTrap::~ScavTrap() {
 }
 
 
-ClapTrap::ClapTrap() {
-	std::cout << "Without parameters ClapTrap was created : ";
-}
-
-
 ScavTrap &ScavTrap::operator=(ScavTrap const &original_copy) {
     if (this != &original_copy) {
         this->setName(original_copy.getName());      
