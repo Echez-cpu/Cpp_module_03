@@ -1,5 +1,7 @@
 #include "ClapTrap.hpp"
 
+#include "ClapTrap.hpp"
+
 int main() {
     ClapTrap claptrap1("Clappy");
     ClapTrap claptrap2("Zappy");
@@ -14,7 +16,16 @@ int main() {
     claptrap2.beRepaired(2);
 
     claptrap1.attack("Zappy");
-    claptrap1.attack("Zappy");   // Should indicate not enough energy for attack
+    claptrap1.attack("Zappy");
+    claptrap1.attack("Zappy");
+    claptrap1.attack("Zappy");
+    claptrap1.attack("Zappy"); 
+    claptrap1.attack("Zappy"); 
+    claptrap1.attack("Zappy"); 
+    claptrap1.attack("Zappy"); 
+    claptrap1.attack("Zappy"); 
+    claptrap1.attack("Zappy");
+    claptrap1.attack("Zappy");  // Should print that there is not enough energy
 
     return 0;
 }
