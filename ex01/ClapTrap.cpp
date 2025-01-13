@@ -3,6 +3,11 @@
 
 // constructors and copy operator
 
+ClapTrap::ClapTrap() {
+	std::cout << "Without parameters ClapTrap was created : ";
+}
+
+
 ClapTrap::ClapTrap(str name) : name(name), hitPoints(10), energyPoints(10), attackDamage(0) {
 	std::cout << std::setw(15) << "ClapTrap \"" << name << "\" was created with :" << std::endl;
 	std::cout << std::setw(30) << "*******************" << std::endl;
@@ -59,6 +64,16 @@ void	ClapTrap::attack(const str &target) {
 	}
 	else
 		std::cout << "ClapTrap " << this->name << " doesn't have enough energy points !" << std::endl;
+}
+
+
+void	ClapTrap::setName(str name) {
+	this->name = name;
+}
+
+
+str	ClapTrap::getName() const {
+	return this->name;
 }
 
 void	ClapTrap::takeDamage(unsigned int amount) {
