@@ -13,9 +13,16 @@ ScavTrap::ScavTrap(ScavTrap const &source) : ClapTrap(source.getName()) {
 	*this = source;
 }
 
+
 ScavTrap::~ScavTrap() {
 	std::cout << "Deadly ScavTrap " << this->name << " exploded." << std::endl;
 }
+
+
+ClapTrap::ClapTrap() {
+	std::cout << "Without parameters ClapTrap was created : ";
+}
+
 
 ScavTrap &	ScavTrap::operator=(ScavTrap const &original_copy) {
 	if (this != &original_copy) {
