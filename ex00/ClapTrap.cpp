@@ -4,11 +4,11 @@
 
 ClapTrap::ClapTrap(str name) : name(name), hitPoints(10), energyPoints(10), attackDamage(0) {
 	std::cout << std::setw(15) << "ClapTrap \"" << name << "\" was created with :" << std::endl;
-	std::cout << std::setw(30) << "--------------------" << std::endl;
+	std::cout << std::setw(30) << "*******************" << std::endl;
 	std::cout << std::setw(27) << "HP : " << this->hitPoints << std::endl;
 	std::cout << std::setw(27) << "Energy Points : " << this->energyPoints << std::endl;
 	std::cout << std::setw(27) << "Attack Damage : " << this->attackDamage << std::endl;
-	std::cout << std::setw(30) << "--------------------" << std::endl << std::endl;
+	std::cout << std::setw(30) << "++++++++++++++++++++" << std::endl << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const &source) {
