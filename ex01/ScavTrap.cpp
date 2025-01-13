@@ -24,16 +24,15 @@ ClapTrap::ClapTrap() {
 }
 
 
-ScavTrap &	ScavTrap::operator=(ScavTrap const &original_copy) {
-	if (this != &original_copy) {
-		this->name = original_copy.getName();
-		this->hitPoints = original_copy.getHitPoints();
-		this->energyPoints = original_copy.getEnergyPoints();
-		this->attackDamage = original_copy.getAttackDamage();
-	}
-	return *this;
+ScavTrap &ScavTrap::operator=(ScavTrap const &original_copy) {
+    if (this != &original_copy) {
+        this->setName(original_copy.getName());      
+        this->setHitPoints(original_copy.getHitPoints());
+        this->setEnergyPoints(original_copy.getEnergyPoints());
+        this->setAttackDamage(original_copy.getAttackDamage());
+    }
+    return *this;
 }
-
 
 
 void	ScavTrap::attack(const str &target) {
