@@ -1,3 +1,5 @@
+#include "ScavTrap.hpp"
+
 ScavTrap::ScavTrap(str name) : ClapTrap() {
 	this->setName(name);
 	this->setHitPoints(100);
