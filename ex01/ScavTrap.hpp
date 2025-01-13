@@ -10,7 +10,7 @@ class ScavTrap : public ClapTrap {
 		ScavTrap(ScavTrap const &source);
 		~ScavTrap();
 
-		ScavTrap & operator=(ScavTrap const &rhSide);
+		ScavTrap & operator=(ScavTrap const &original_copy);
 		
 		void	attack(const str &target);
 		void	guardGate() const;
