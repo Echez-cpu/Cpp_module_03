@@ -1,3 +1,6 @@
+#include "FragTrap.hpp"
+
+
 FragTrap::FragTrap(str name) : ClapTrap() {
 	this->name = name;
 	this->hitPoints = 100;
