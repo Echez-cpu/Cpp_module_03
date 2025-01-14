@@ -14,8 +14,8 @@ int main() {
     scav2.attack("Enemy");
 
     std::cout << "\n=== Testing takeDamage ===" << std::endl;
-    scav1.takeDamage(30);
-    scav2.takeDamage(70);
+    scav1.takeDamage(20);
+    scav2.takeDamage(20);
 
     std::cout << "\n=== Testing beRepaired ===" << std::endl;
     scav1.beRepaired(20);
