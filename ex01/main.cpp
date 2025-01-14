@@ -15,11 +15,15 @@ int main() {
 
     std::cout << "\n=== Testing takeDamage ===" << std::endl;
     scav1.takeDamage(20);
+    std::cout << "New hit point:" << scav1.getHitPoints() << std:: endl;
     scav2.takeDamage(20);
+    std::cout << "New hit point:" << scav2.getHitPoints() << std:: endl;
 
     std::cout << "\n=== Testing beRepaired ===" << std::endl;
     scav1.beRepaired(20);
+    std::cout << "New hit point:" << scav1.getHitPoints() << std:: endl;
     scav2.beRepaired(50);
+    std::cout << "New hit point:" << scav2.getHitPoints() << std:: endl;
 
     std::cout << "\n=== Testing energy depletion ===" << std::endl;
     for (int i = 0; i < 55; ++i) {  // Loop to deplete energy
@@ -35,8 +39,6 @@ int main() {
     // Objects will be destroyed in reverse order of creation automatically.
     return 0;
 }
-
-
 
 /*int	main() {
 	ClapTrap	Angel("Angel");
