@@ -5,7 +5,7 @@ ScavTrap::ScavTrap(str name) : ClapTrap() {
 	this->setHitPoints(100);
 	this->setEnergyPoints(50);
 	this->setAttackDamage(20);
-	std::cout << "A very deadly ScavTrap has appeared, be careful with " << this->getName() << " and his " << this->getAttackDamage() << " attack damage !" << std::endl;
+	std::cout << "A very ferocious ScavTrap has appeared, be careful with " << this->getName() << " and his " << this->getAttackDamage() << " attack damage !" << std::endl;
 }
 
 
