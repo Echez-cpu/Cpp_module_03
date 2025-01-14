@@ -38,17 +38,17 @@ int main() {
 
 
 
-int	main() {
+/*int	main() {
 	ClapTrap	Angel("Angel");
 	ClapTrap	*Human = new ClapTrap("Human");
 	ScavTrap	Demon("Demon");
 
 	Angel.attack("Demon");
-	Demon.takeDamage(Robin.getAttackDamage());
+	Demon.takeDamage(Angel.getAttackDamage());
 	Demon.beRepaired(18);
     Demon.guardGate();
 	Demon.attack("Human");
 	Human->takeDamage(Demon.getAttackDamage());
 	delete Human;
 	return 0;
-}
+}*/
