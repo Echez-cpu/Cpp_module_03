@@ -15,3 +15,19 @@ FragTrap::FragTrap(FragTrap const &source) {
 FragTrap::~FragTrap() {
   std::cout << "FragTrap " << this->name << " has been destroyed! (Destructor called)\n";
 }
+
+
+FragTrap&	FragTrap::operator=(FragTrap const &original_copy) {
+	if (this != &original_copy) {
+		this->name = original_copy.getName();
+		this->hitPoints = original_copy.getHitPoints();
+		this->energyPoints = original_copy.getEnergyPoints();
+		this->attackDamage = original_copy.getAttackDamage();
+	}
+	return *this;
+}
+
+
+void	FragTrap::highFivesGuys() {
+	 std::cout << "FragTrap " << name << " requests a high five! ✋\n";
+}
