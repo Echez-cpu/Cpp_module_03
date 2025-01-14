@@ -1,8 +1,3 @@
-#include "ClapTrap.hpp"
-
-#include "ClapTrap.hpp"
-
-
 
 #include "ClapTrap.hpp"
 
