@@ -29,7 +29,7 @@ class ClapTrap {
 		void	takeDamage(unsigned int amount);
 		void	beRepaired(unsigned int amount);
 	
-	private:
+	protected:                       // using private here still works because i implemented setters and getters functions and used them in the code...
 		str	name;
 		int	hitPoints;
 		int	energyPoints;
