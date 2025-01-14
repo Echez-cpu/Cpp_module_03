@@ -31,8 +31,22 @@ ScavTrap &ScavTrap::operator=(ScavTrap const &original_copy) {
 
 
 void	ScavTrap::attack(const str &target) {
-	std::cout << "Deadly ScavTrap " << this->getName() << " go for harmless " << target << " causing him " << this->getAttackDamage() << " attack damage" << std::endl;
+	 if (this->hitPoints <= 0) 
+	{
+		 std::cout << "ferocious ScavTrap " << this->name << " can't attack because it has no hit points left!" << std::endl;
+        return;
+    }
+    if (this->energyPoints > 0) 
+	{
+		std::cout << "ferocious ScavTrap " << this->getName() << " lauches for harmless " << target << " causing it " << this->getAttackDamage() << " attack damage" << std::endl;
+        this->energyPoints -= 1;
+       } 
+	else {
+        std::cout << "Deadly ScavTrap " << this->name << " can't attack " << target << " because it has no energy points left!" << std::endl;
+    }
 }
+
+
 
 void	ScavTrap::guardGate() const {
 	std::cout << "Violence ScavTrap " << this->getName() << " is now in Gate keeper mode.!" << std::endl;
