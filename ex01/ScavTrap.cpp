@@ -31,7 +31,7 @@ ScavTrap &ScavTrap::operator=(ScavTrap const &original_copy) {
 
 
 void	ScavTrap::attack(const str &target) {
-	std::cout << "Deadly ScavTrap " << this->getName() << " go for broke " << target << " causing him " << this->getAttackDamage() << " attack damage" << std::endl;
+	std::cout << "Deadly ScavTrap " << this->getName() << " go for harmless " << target << " causing him " << this->getAttackDamage() << " attack damage" << std::endl;
 }
 
 void	ScavTrap::guardGate() const {
