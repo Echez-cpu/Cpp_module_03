@@ -15,6 +15,15 @@ FragTrap::FragTrap(FragTrap const &source) {
 }
 
 
+FragTrap::FragTrap() : ClapTrap() {
+    this->hitPoints = 100;
+    this->energyPoints = 100; 
+    this->attackDamage = 30;
+    std::cout << "FragTrap default constructor called for " << this->name << "." << std::endl;
+}
+
+
+
 FragTrap::~FragTrap() {
   std::cout << "FragTrap " << this->name << " has been destroyed! (Destructor called)\n";
 }
