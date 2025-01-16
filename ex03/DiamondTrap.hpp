@@ -14,6 +14,8 @@ class DiamondTrap : public FragTrap, public ScavTrap {
 		DiamondTrap &	operator=(DiamondTrap const &original_copy);
 
 		void	whoAmI() const;
+		void attack(const str &target);
+
 	private:
 		str	name;
 };
