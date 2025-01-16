@@ -4,7 +4,7 @@
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
 
-class DiamondTrap : public public ScavTrap, FragTrap {
+class DiamondTrap : public ScavTrap, public FragTrap {
 	public:
 		DiamondTrap(str name);
 		DiamondTrap(DiamondTrap const &source);
