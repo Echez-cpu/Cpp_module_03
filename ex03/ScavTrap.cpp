@@ -19,6 +19,15 @@ ScavTrap::~ScavTrap() {
 }
 
 
+ScavTrap::ScavTrap() : ClapTrap() {
+    this->hitPoints = 100; 
+    this->energyPoints = 50;
+    this->attackDamage = 20;
+    std::cout << "ScavTrap default constructor called for " << this->name << "." << std::endl;
+}
+
+
+
 ScavTrap &ScavTrap::operator=(ScavTrap const &original_copy) {
     if (this != &original_copy) {
         this->setName(original_copy.getName());      
