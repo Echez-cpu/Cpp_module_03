@@ -7,6 +7,7 @@ class ScavTrap : virtual public ClapTrap {
 	public:
 		ScavTrap(str name);
 		ScavTrap(ScavTrap const &source);
+		ScavTrap();
 		~ScavTrap();
 
 		ScavTrap& operator=(ScavTrap const &original_copy);
