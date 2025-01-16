@@ -14,7 +14,7 @@ DiamondTrap::DiamondTrap(str name) : ClapTrap(name + "_clap_name") {
 	std::cout << std::setw(30) << "--------------------" << std::endl << std::endl;
 }
 
-DiamondTrap::DiamondTrap(DiamondTrap const &source) : ClapTrap(source), ScavTrap(source), FragTrap(source) {
+DiamondTrap::DiamondTrap(DiamondTrap const &source) : ClapTrap(source), FragTrap(source), ScavTrap(source) {
 	*this = source;
 }
 
