@@ -10,7 +10,7 @@ FragTrap::FragTrap(str name) : ClapTrap() {
 }
 
 
-FragTrap::FragTrap(FragTrap const &source) {
+FragTrap::FragTrap(FragTrap const &source) :  ClapTrap(source) {
 	*this = source;
 }
 
